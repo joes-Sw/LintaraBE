@@ -1,15 +1,14 @@
-const express = require("express");
 const express = require('express');
 const cors = require('cors');
-const authRoutes = require('./routes/authRoutes');
-const userRoutes = require('./routes/userRoutes');
-const challengeRouter = require("./routes/challengeRoutes");
-const challengeHistoricalRouter = require("./routes/challengeHistoricalRoutes");
-const followersRouter = require("./routes/followersRoutes");
-const reportsRouter = require("./routes/reportRoutes");
-const PostsRouter = require("./routes/postsRoutes");
-const likePostRouter = require("./routes/likePostRoutes");
-const commentRouter = require("./routes/commentRoutes");
+const authRoutes = require('../routes/authRoutes');
+const userRoutes = require('../routes/userRoutes');
+const challengeRouter = require("../routes/challengeRoutes");
+const challengeHistoricalRouter = require("../routes/challengeHistoricalRoutes");
+const followersRouter = require("../routes/followersRoutes");
+const reportsRouter = require("../routes/reportRoutes");
+const PostsRouter = require("../routes/postsRoutes");
+const likePostRouter = require("../routes/likePostRoutes");
+const commentRouter = require("../routes/commentRoutes");
 require('dotenv').config();
 
 const app = express();
